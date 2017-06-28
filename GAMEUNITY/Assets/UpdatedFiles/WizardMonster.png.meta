@@ -1,0 +1,1000 @@
+fileFormatVersion: 2
+guid: 3cdfd945e467e50428ab9735493d9b23
+timeCreated: 1498185586
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WizardMonster_0
+    21300002: WizardMonster_1
+    21300004: WizardMonster_2
+    21300006: WizardMonster_3
+    21300008: WizardMonster_4
+    21300010: WizardMonster_5
+    21300012: WizardMonster_6
+    21300014: WizardMonster_7
+    21300016: WizardMonster_8
+    21300018: WizardMonster_9
+    21300020: WizardMonster_10
+    21300022: WizardMonster_11
+    21300024: WizardMonster_12
+    21300026: WizardMonster_13
+    21300028: WizardMonster_14
+    21300030: WizardMonster_15
+    21300032: WizardMonster_16
+    21300034: WizardMonster_17
+    21300036: WizardMonster_18
+    21300038: WizardMonster_19
+    21300040: WizardMonster_20
+    21300042: WizardMonster_21
+    21300044: WizardMonster_22
+    21300046: WizardMonster_23
+    21300048: WizardMonster_24
+    21300050: WizardMonster_25
+    21300052: WizardMonster_26
+    21300054: WizardMonster_27
+    21300056: WizardMonster_28
+    21300058: WizardMonster_29
+    21300060: WizardMonster_30
+    21300062: WizardMonster_31
+    21300064: WizardMonster_32
+    21300066: WizardMonster_33
+    21300068: WizardMonster_34
+    21300070: WizardMonster_35
+    21300072: WizardMonster_36
+    21300074: WizardMonster_37
+    21300076: WizardMonster_38
+    21300078: WizardMonster_39
+    21300080: WizardMonster_40
+    21300082: WizardMonster_41
+    21300084: WizardMonster_42
+    21300086: WizardMonster_43
+    21300088: WizardMonster_44
+    21300090: WizardMonster_45
+    21300092: WizardMonster_46
+    21300094: WizardMonster_47
+    21300096: WizardMonster_48
+    21300098: WizardMonster_49
+    21300100: WizardMonster_50
+    21300102: WizardMonster_51
+    21300104: WizardMonster_52
+    21300106: WizardMonster_53
+    21300108: WizardMonster_54
+    21300110: WizardMonster_55
+    21300112: WizardMonster_56
+    21300114: WizardMonster_57
+    21300116: WizardMonster_58
+    21300118: WizardMonster_59
+    21300120: WizardMonster_60
+    21300122: WizardMonster_61
+    21300124: WizardMonster_62
+    21300126: WizardMonster_63
+    21300128: WizardMonster_64
+    21300130: WizardMonster_65
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WizardMonster_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 907
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 907
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 907
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 907
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_4
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 907
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_5
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 907
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 788
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_7
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 788
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 788
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_9
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 788
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 788
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_11
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 834
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_12
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 788
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 660
+        width: 99
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_14
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 737
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 709
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 706
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_17
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 706
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_18
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 709
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_19
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 706
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_20
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 709
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_21
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 699
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_22
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 690
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_23
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 690
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_24
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 690
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_25
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 690
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_26
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 690
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_27
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 690
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_28
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 690
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_29
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 690
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_30
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 690
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_31
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 536
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_32
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 534
+        width: 101
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_33
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 533
+        width: 105
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_34
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 533
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_35
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 533
+        width: 107
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_36
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 533
+        width: 107
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_37
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 532
+        width: 90
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_38
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 563
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_39
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 532
+        width: 77
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_40
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 532
+        width: 90
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_41
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 532
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_42
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 532
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_43
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 532
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_44
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 387
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_45
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 387
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_46
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 387
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_47
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 387
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_48
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 387
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_49
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 387
+        width: 90
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_50
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 387
+        width: 90
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_51
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 388
+        width: 90
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_52
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 388
+        width: 89
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_53
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 419
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_54
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 388
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_55
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 388
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_56
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 388
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_57
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 388
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_58
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 309
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_59
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 310
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_60
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 308
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_61
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 308
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_62
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 152
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_63
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 151
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_64
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 156
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WizardMonster_65
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 12
+        width: 99
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
