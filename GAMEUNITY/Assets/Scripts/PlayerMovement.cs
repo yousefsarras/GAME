@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
     public bool grounded;
 
     //Move handle
-    float moveSpeed = 6;
+    public float moveSpeed = 6;
     float gravity;
     float maxJumpVelocity;
     float minJumpVelocity;
