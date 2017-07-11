@@ -7,6 +7,7 @@ TagManager:
   - GM
   - Enemy
   - Through
+  - Turret
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Turret
+    uniqueID: 1397973477
+    locked: 0
+  - name: Ground
+    uniqueID: 1154154785
     locked: 0
