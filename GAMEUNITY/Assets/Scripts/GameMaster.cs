@@ -6,9 +6,6 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour {
 
     public static GameMaster gm;
-    public int spawnDelay = 1;
-    public Transform playerPrefab;
-    public Transform spawnPoint;
 
     private void Start()
     {
@@ -17,6 +14,10 @@ public class GameMaster : MonoBehaviour {
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         }
     }
+
+    public int spawnDelay = 1;
+    public Transform playerPrefab;
+    public Transform spawnPoint;
 
     public IEnumerator RespawnPlayer()
     {
@@ -30,5 +31,11 @@ public class GameMaster : MonoBehaviour {
         //Destroy expects a gameobject
         Destroy(player.gameObject);
         gm.StartCoroutine(gm.RespawnPlayer());
+    }
+
+    public static void KillTurret(TurretManager turret)
+    {
+        //Destroy expects a gameobject
+        Destroy(turret.gameObject);
     }
 }
