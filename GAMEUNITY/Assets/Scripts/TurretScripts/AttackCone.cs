@@ -19,6 +19,7 @@ public class AttackCone : MonoBehaviour {
         {
             if (isLeft)
             {
+                //facing left
                 turretAI.Attack(false);
             }
             else

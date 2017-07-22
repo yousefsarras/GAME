@@ -39,7 +39,7 @@ public class CameraFollow : MonoBehaviour {
             FindPlayer();
             return;
         }
-
+        
         focusArea.Update(target.collide.bounds);
 
         //Camera

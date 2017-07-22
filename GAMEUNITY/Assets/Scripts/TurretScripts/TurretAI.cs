@@ -33,7 +33,6 @@ public class TurretAI : MonoBehaviour {
     private void Start()
     {
         currentHealth = maxHealth;
-        //target = gameObject.GetComponent<PlayerInput>();
     }
 
     private void Update()
@@ -87,6 +86,7 @@ public class TurretAI : MonoBehaviour {
             //Left
             if (!attackingRight)
             {
+                Debug.Log("Attacking");
                 GameObject bulletClone;
                 bulletClone = Instantiate(bullet, shootingPointLeft.transform.position, shootingPointLeft.transform.rotation) as GameObject;
                 bulletClone.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;

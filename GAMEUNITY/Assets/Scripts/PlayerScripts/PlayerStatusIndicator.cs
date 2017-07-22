@@ -9,16 +9,8 @@ public class PlayerStatusIndicator : MonoBehaviour {
     private RectTransform healthBarRect;
     [SerializeField]
     private RectTransform manaBarRect;
-
-    //UI Camera Lock
-    /*[SerializeField]
-    private RectTransform UIhealthBarRect;
     [SerializeField]
-    private RectTransform UImanaBarRect;
-    [SerializeField]
-    private Text UIhealthText;
-    [SerializeField]
-    private Text UImanaText;*/
+    private Text levelText;
 
     private void Start()
     {
@@ -32,9 +24,6 @@ public class PlayerStatusIndicator : MonoBehaviour {
     {
         float _value = (float)_cur / _max;
         manaBarRect.localScale = new Vector3(_value, 1f, 1f);
-
-        //UImanaBarRect.localScale = new Vector3(_value, 1f, 1f);
-        //UImanaText.text = _cur + "/" + _max + " MP";
     }
 
     public void SetHealth(int _cur, int _max)
@@ -42,9 +31,11 @@ public class PlayerStatusIndicator : MonoBehaviour {
         float _value = (float)_cur / _max;
 
         healthBarRect.localScale = new Vector3(_value, 1f, 1f);
+    }
 
-        //UIhealthBarRect.localScale = new Vector3(_value, 1f, 1f);
-        //UIhealthText.text = _cur + "/" + _max + " HP";
+    public void SetLevel(int _cur)
+    {
+        levelText.text = _cur.ToString();
     }
 
 

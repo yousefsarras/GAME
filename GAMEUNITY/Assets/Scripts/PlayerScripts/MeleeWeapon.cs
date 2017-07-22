@@ -27,7 +27,6 @@ public class MeleeWeapon : MonoBehaviour {
 
             attackTrigger.enabled = true;
         }
-
         if (attacking)
         {
             if(attackTimer > 0)

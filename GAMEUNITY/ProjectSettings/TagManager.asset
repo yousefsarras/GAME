@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Through
   - Turret
+  - Obstacle
   layers:
   - Default
   - TransparentFX

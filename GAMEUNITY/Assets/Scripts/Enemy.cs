@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    public Collider2D xpRange;
+    public XpRangeGain xpGain;
     [System.Serializable]    //Serializable class
     public class EnemyStats
     {
@@ -17,12 +19,32 @@ public class Enemy : MonoBehaviour {
 
         public int maxMana = 100;
         public int manaRegen = 5;
-        private int _currentMana;
-        public int currentMana
+
+        public int xpWorth = 10;
+        public void Init()
         {
-            get { return _currentMana; }
-            set { _currentMana = Mathf.Clamp(value, 0, maxHealth); }
+            currentHealth = maxHealth;
         }
     }
-    
+
+    public EnemyStats enemyStats = new EnemyStats();
+
+    public void Start()
+    {
+        enemyStats.Init();
+        xpRange.enabled = false;
+        xpGain = gameObject.GetComponentInChildren<XpRangeGain>();
+    }
+
+    public void DamageEnemy(int damage)
+    {
+        enemyStats.currentHealth -= damage;
+        if(enemyStats.currentHealth <= 0)
+        {
+            xpRange.enabled = true;
+        }
+    }
+
+
+
 }

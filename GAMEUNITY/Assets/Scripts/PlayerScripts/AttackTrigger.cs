@@ -10,12 +10,13 @@ public class AttackTrigger : MonoBehaviour {
     {
         if (collision.CompareTag("Enemy"))
         {
-            Debug.Log("We hit " + collision.name + " and did " + damage + " damage!");
+            Enemy enemy = collision.GetComponent<Enemy>();
+            enemy.DamageEnemy(damage);
         }
 
         if (collision.CompareTag("Turret"))
         {
-            TurretManager turret = collision.GetComponent<TurretManager>();
+            TurretManager turret = collision.GetComponentInParent<TurretManager>();//find child component
             turret.DamageTurret(damage);
         }
     }

@@ -52,6 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 1
-  playerPrefab: {fileID: 4478457026517086, guid: 01801e0a4fb0a0242b4e8a6d8c52fe79,
+  playerPrefab: {fileID: 4305819626436692, guid: 59cc40defbcbb0040908f4b5a14dc177,
     type: 2}
   spawnPoint: {fileID: 0}

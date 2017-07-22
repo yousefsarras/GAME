@@ -146,16 +146,6 @@ public class PlayerMovement : MonoBehaviour {
 
         anim.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
 
-        //Flip
-        /*if (Input.GetAxisRaw("Horizontal") < -0.1f)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-
-        if (Input.GetAxisRaw("Horizontal") > 0.1f)
-        {
-            transform.localScale = new Vector3(1, 1, 1); 
-        }*/
         Flip();
     }
 
