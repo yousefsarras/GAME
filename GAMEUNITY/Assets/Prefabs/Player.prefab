@@ -142,14 +142,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4305819626436692}
   - component: {fileID: 212490219516956734}
+  - component: {fileID: 50088824009686326}
   - component: {fileID: 61892802531640614}
   - component: {fileID: 95283360587580008}
   - component: {fileID: 114335355611154634}
   - component: {fileID: 114312910801188366}
   - component: {fileID: 114305430326855912}
-  - component: {fileID: 114911032556038614}
-  - component: {fileID: 50088824009686326}
   - component: {fileID: 114056177429819766}
+  - component: {fileID: 114911032556038614}
   - component: {fileID: 114924161273035326}
   m_Layer: 10
   m_Name: Player
@@ -504,12 +504,15 @@ MonoBehaviour:
   fallBoundary: -100
   noRegenMana: 0
   dead: 0
+  moveController: {fileID: 0}
   cam: {fileID: 0}
   playerStats:
     maxHealth: 100
     maxMana: 100
     manaRegen: 5
     maxLevel: 20
+    damage: 0
+    movementSpd: 0
     xp: 0
   statusIndicator: {fileID: 114451209584777626}
   UIstatusIndicator: {fileID: 114242930569497590}
@@ -752,6 +755,7 @@ MonoBehaviour:
   velocity: {x: 13, y: 0}
   offset: {x: 0.4, y: 0.1}
   cooldown: 1
+  player: {fileID: 4305819626436692}
 --- !u!114 &114991224258129490
 MonoBehaviour:
   m_ObjectHideFlags: 1

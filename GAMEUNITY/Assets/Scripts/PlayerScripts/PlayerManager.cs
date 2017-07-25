@@ -7,12 +7,12 @@ public class PlayerManager : MonoBehaviour {
     public float fallBoundary = -20;
     public bool noRegenMana = false;
     public bool dead = false;
-
+    public PlayerMovement moveController;
     public CameraFollow cam;
     [System.Serializable]    //Serializable class
     public class PlayerStats
     {   //Health
-        public int maxHealth = 100;
+        public int maxHealth = 500;
         private int _currentHealth;
         public int currentHealth
         {
@@ -40,7 +40,10 @@ public class PlayerManager : MonoBehaviour {
 
         public double damage;
 
+        public float movementSpd;
+
         public int xp = 0;
+        public int gold = 0;
 
         public void Init()
         {
@@ -48,6 +51,7 @@ public class PlayerManager : MonoBehaviour {
             currentMana = maxMana;
             level = 1;
             damage = 40;
+            gold = 0;
         }
     }
 
@@ -61,6 +65,7 @@ public class PlayerManager : MonoBehaviour {
     private void Start()
     {
         playerStats.Init();
+        moveController = GetComponent<PlayerMovement>();
         if(statusIndicator == null || UIstatusIndicator == null)
         {
             Debug.LogError("No status indicator referenced on Player");
@@ -74,8 +79,8 @@ public class PlayerManager : MonoBehaviour {
             UIstatusIndicator.SetHealth(playerStats.currentHealth, playerStats.maxHealth);
             UIstatusIndicator.SetMana(playerStats.currentMana, playerStats.maxMana);
         }
-
     }
+
     public void DamagePlayer(int damage)
     {
         playerStats.currentHealth -= damage;
@@ -135,13 +140,20 @@ public class PlayerManager : MonoBehaviour {
 
     public void levelUp(int currentLevel)
     {
-        playerStats.level++;
+        Debug.Log("level: " + playerStats.level);
         statusIndicator.SetLevel(playerStats.level);
-        //add health ie: 10 * currentLevel * 0.7
-        playerStats.damage  = playerStats.damage + currentLevel * 0.25; 
-        //add movement speed ie: 
+        Debug.Log("level: " + playerStats.level);
+        //playerStats.maxHealth = (10 * currentLevel) +10;
+        //playerStats.damage  = playerStats.damage + currentLevel * 0.25;
+        //playerStats.movementSpd = playerStats.movementSpd + 0.1f;
+        //moveController.moveSpeed = playerStats.movementSpd;
         playerStats.xp = 0;
 
+    }
+
+    public void addGold(int goldAmount)
+    {
+        playerStats.gold += goldAmount;
     }
 
 }

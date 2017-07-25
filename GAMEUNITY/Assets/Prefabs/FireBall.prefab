@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50657788072632082}
   - component: {fileID: 61297059300207046}
   m_Layer: 0
-  m_Name: Blink
+  m_Name: FireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb82fee5d610f8488710d39ec4aa131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  player: {fileID: 0}
+  abilities: {fileID: 0}
+  damage: 50
 --- !u!212 &212380005261631808
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -12,10 +12,12 @@ public class PlayerAbilities : MonoBehaviour {
     PlayerMovement playerMove;
     public Transform player;
     GameObject go;
+    public bool goExist = false;
 
 	// Use this for initialization
 	void Start () {
         playerMove = GetComponentInParent<PlayerMovement>();
+
 	}
 	
 	// Update is called once per frame
@@ -25,6 +27,7 @@ public class PlayerAbilities : MonoBehaviour {
             //Start cooldown count down
             StartCoroutine(CanCast());
             go = Instantiate(BlinkCast, (Vector2)transform.position + offset * transform.localScale.x, Quaternion.identity);
+            goExist = true;
             if (!playerMove.facingRight)
             {
                 go.transform.Rotate(0, 180, 0);
@@ -33,17 +36,20 @@ public class PlayerAbilities : MonoBehaviour {
 
         }
 
-        if(canCast == false)
+        if(canCast == false && goExist == true)
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Debug.Log("Tele");
                 player.transform.position = go.transform.position + new Vector3(0f, 1f);
                 Destroy(go);
+                goExist = false;
             }
         }
-
-        
+        else
+        {
+            return;
+        }
     }
 
     IEnumerator CanCast()

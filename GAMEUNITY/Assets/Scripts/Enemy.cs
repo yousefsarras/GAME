@@ -6,6 +6,9 @@ public class Enemy : MonoBehaviour {
 
     public Collider2D xpRange;
     public XpRangeGain xpGain;
+    [HideInInspector]
+    public ArrayList damageHistory;
+
     [System.Serializable]    //Serializable class
     public class EnemyStats
     {
@@ -21,6 +24,7 @@ public class Enemy : MonoBehaviour {
         public int manaRegen = 5;
 
         public int xpWorth = 10;
+        public int goldWorth = 10;
         public void Init()
         {
             currentHealth = maxHealth;
@@ -28,6 +32,7 @@ public class Enemy : MonoBehaviour {
     }
 
     public EnemyStats enemyStats = new EnemyStats();
+
 
     public void Start()
     {
@@ -42,9 +47,10 @@ public class Enemy : MonoBehaviour {
         if(enemyStats.currentHealth <= 0)
         {
             xpRange.enabled = true;
+            if(xpGain == true)
+            {
+                GameMaster.KillEnemy(this);
+            }
         }
     }
-
-
-
 }
