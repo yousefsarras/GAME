@@ -23,7 +23,6 @@ public class FireBall : MonoBehaviour {
                 player.addGold(enemy.enemyStats.goldWorth);
             }
             enemy.DamageEnemy(damage);
-            Debug.Log("Gold:" + player.playerStats.gold);
             abilities.goExist = false;
             Destroy(gameObject);
         }

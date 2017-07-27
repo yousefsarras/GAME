@@ -4,6 +4,7 @@ using UnityEngine;
 
 [RequireComponent (typeof(Controller2D))]
 public class PlayerMovement : MonoBehaviour {
+
     //Animation Handle
     [HideInInspector]
     public Animator anim;
@@ -18,10 +19,10 @@ public class PlayerMovement : MonoBehaviour {
 
     //Move handle
     public float moveSpeed = 6;
-    float gravity;
+    public float gravity;
     float maxJumpVelocity;
     float minJumpVelocity;
-    Vector3 velocity;
+    public Vector3 velocity;
 
     //Smoothing
     float velocityXSmoothing;
@@ -41,6 +42,11 @@ public class PlayerMovement : MonoBehaviour {
     public PlayerManager playerInfo;
     public PlayerStatusIndicator status;
 
+    //Climbing
+    public float climbSpeed = 6;
+    public float climbVelocity;
+    public float gravityStore;
+    public bool climbingLadder = false;
     //Flip
     Vector2 directionalInput;
 
@@ -54,6 +60,7 @@ public class PlayerMovement : MonoBehaviour {
         anim = GetComponent<Animator>();
         facingRight = true;
         status = gameObject.GetComponentInChildren<PlayerStatusIndicator>();
+        gravityStore = gravity;
     }
 
     public void SetDirectionalInput(Vector2 input)
@@ -142,6 +149,17 @@ public class PlayerMovement : MonoBehaviour {
         else
         {
             grounded = true;
+        }
+
+        if (climbingLadder)
+        {
+            gravity = 0f;
+            climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
+            velocity = new Vector2(0, climbVelocity);
+        }
+        if (!climbingLadder)
+        {
+            gravity = gravityStore;
         }
 
         anim.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));

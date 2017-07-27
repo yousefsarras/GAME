@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940901146787824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.7489176, y: 0.032506704, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4630753583228442}
@@ -124,13 +124,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1095fd975e3d2bf489ae53a46e3835a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xpRange: {fileID: 58536962150695886}
-  xpGain: {fileID: 0}
+  xpRangeCollider: {fileID: 58536962150695886}
+  xpGain: {fileID: 114849729236416088}
   enemyStats:
     maxHealth: 100
     maxMana: 100
     manaRegen: 5
     xpWorth: 10
+    goldWorth: 10
 --- !u!114 &114849729236416088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62187caccc1be84585732fc81c82f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xpReaper: 0
 --- !u!212 &212738317788774540
 SpriteRenderer:
   m_ObjectHideFlags: 1

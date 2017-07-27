@@ -21,7 +21,7 @@ public class AttackTrigger : MonoBehaviour {
             if(enemy.enemyStats.currentHealth - damage <= 0)
             {
                 player.addGold(enemy.enemyStats.goldWorth);
-                Debug.Log("gold: " + player.playerStats.gold);
+                //Debug.Log("gold: " + player.playerStats.gold);
             }
             enemy.DamageEnemy(damage);
         }

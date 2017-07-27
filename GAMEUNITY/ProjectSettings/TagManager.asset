@@ -9,6 +9,7 @@ TagManager:
   - Through
   - Turret
   - Obstacle
+  - Ladder
   layers:
   - Default
   - TransparentFX

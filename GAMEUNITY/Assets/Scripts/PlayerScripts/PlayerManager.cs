@@ -130,6 +130,7 @@ public class PlayerManager : MonoBehaviour {
 
     public void addXp(int xp)
     {
+        //Debug.Log("Xp: " + playerStats.xp);
         playerStats.xp += xp;
         //Static for now
         if(playerStats.xp == 20)

@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    public Collider2D xpRange;
-    public XpRangeGain xpGain;
-    [HideInInspector]
-    public ArrayList damageHistory;
+    public Collider2D xpRangeCollider;
+    public XpRangeGain xpRangeGain;
 
     [System.Serializable]    //Serializable class
     public class EnemyStats
@@ -36,21 +34,26 @@ public class Enemy : MonoBehaviour {
 
     public void Start()
     {
+        xpRangeCollider.enabled = false;
         enemyStats.Init();
-        xpRange.enabled = false;
-        xpGain = gameObject.GetComponentInChildren<XpRangeGain>();
+        xpRangeGain = gameObject.GetComponentInChildren<XpRangeGain>();
     }
 
     public void DamageEnemy(int damage)
     {
         enemyStats.currentHealth -= damage;
+        //Enemy is dead after this statement
         if(enemyStats.currentHealth <= 0)
         {
-            xpRange.enabled = true;
-            if(xpGain == true)
-            {
-                GameMaster.KillEnemy(this);
-            }
+            xpRangeCollider.enabled = true;
+        }
+    }
+
+    public void Update()
+    {
+        if (xpRangeGain.xpReaper)
+        {
+            GameMaster.KillEnemy(this);
         }
     }
 }

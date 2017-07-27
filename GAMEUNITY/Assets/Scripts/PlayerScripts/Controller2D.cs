@@ -8,7 +8,6 @@ public class Controller2D : RayCastController {
     public CollisionInfo collisions;
     [HideInInspector]
     public Vector2 playerInput;
-
     float maxClimbAngle = 70f;
     float maxDescendAngle = 75f;
 
@@ -39,9 +38,23 @@ public class Controller2D : RayCastController {
             Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.red);
 
             if (hit)
-            {
+            {/*
+                if (hit.collider.tag == "Ladder")
+                {
+                    if (directionY == 1 || directionY == -1 || hit.distance == 0)
+                    {
+                        onVertLadder = true;
+                        Debug.Log("Ladder hit vertical");
+                        continue;
+                    }
+                }
+                else
+                {
+                    onVertLadder = false;
+                    Debug.Log("Ladder NOT hit vertical");
+                }*/
                 //Move through platfroms up
-                if(hit.collider.tag == "Through")
+                if (hit.collider.tag == "Through")
                 {
                     //We have a velocity of skin width in the rays so it slides up
                     if(directionY == 1 || hit.distance == 0)
@@ -61,6 +74,8 @@ public class Controller2D : RayCastController {
                         continue;
                     }
                 }
+
+                
                 // set y velo equal to the amount we have to move. move ray distance
                 velocity.y = (hit.distance - skinWidth) * directionY;
                 //Change or update ray length once we hit something
@@ -126,7 +141,23 @@ public class Controller2D : RayCastController {
 
             if (hit)
             {
-                if(hit.collider.tag == "Through")
+                /*if (hit.collider.tag == "Ladder")
+                {
+                    if (directionX == 1 || directionX == -1 || hit.distance == 0)
+                    {
+                        onLadder = true;
+                        Debug.Log("Ladder hit horizontal");
+                        continue;
+                    }
+                }
+                else
+                {
+                    onLadder = false;
+                    Debug.Log("Ladder NOT hit horizontal");
+                }*/
+                
+                
+                if (hit.collider.tag == "Through")
                 {
                     continue;
                 }
@@ -152,6 +183,7 @@ public class Controller2D : RayCastController {
                     ClimbSlope(ref velocity, slopeAngle);
                     velocity.x += distanceToSlopeStart * directionX;
                 }
+
 
                 //check rest of the rays for collisions
                 if (!collisions.climbingSlope || slopeAngle > maxClimbAngle)
@@ -276,6 +308,7 @@ public class Controller2D : RayCastController {
     void ResetFallingThroughPlatform()
     {
         collisions.fallingThroughPlatform = false;
+
     }
 
     public struct CollisionInfo

@@ -10,17 +10,15 @@ public class XpRangeGain : MonoBehaviour {
     public void Start()
     {
         enemy = GetComponentInParent<Enemy>();
-        xpReaper = false;
+        //xpReaper = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            xpReaper = true;
             PlayerManager player = collision.GetComponent<PlayerManager>();
             player.addXp(enemy.enemyStats.xpWorth);
-            xpReaper = true;
-            //GameMaster.KillEnemy(enemy);
-            Debug.Log("XP: " + player.playerStats.xp);
         }
     }
 }
