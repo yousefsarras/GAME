@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour {
             {
                 //start attacking
                 attacking = true;
-                playerInfo.LoseMana(10);
+                //playerInfo.LoseMana(10);
                 //set to the initial time to max cd time
                 attackTimer = attackCd;
                 //being the collider2d
@@ -130,8 +130,10 @@ public class PlayerMovement : MonoBehaviour {
 
         float targetVelocityX = directionalInput.x * moveSpeed;
 
-        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)? acceleratonTimeGrounded : accelerationTimeAirBourne);
-
+        if (!climbingLadder)
+        {
+            velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? acceleratonTimeGrounded : accelerationTimeAirBourne);
+        }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime, directionalInput);
 
@@ -154,8 +156,11 @@ public class PlayerMovement : MonoBehaviour {
         if (climbingLadder)
         {
             gravity = 0f;
+            //targetVelocityX = 0f;
             climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
-            velocity = new Vector2(0, climbVelocity);
+            //make a horizontal velocity HERE
+            //directionalInput.x = Input.GetAxisRaw("Horizontal") && Input.GetKeyDown(KeyCode.Space);
+            velocity = new Vector2(velocity.x * 0, climbVelocity);
         }
         if (!climbingLadder)
         {

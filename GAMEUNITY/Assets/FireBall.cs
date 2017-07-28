@@ -21,6 +21,9 @@ public class FireBall : MonoBehaviour {
             if(enemy.enemyStats.currentHealth - damage <= 0)
             {
                 player.addGold(enemy.enemyStats.goldWorth);
+                //Will run first to fix range issue
+                player.addXp(enemy.enemyStats.xpWorth);
+                GameMaster.KillEnemy(enemy);
             }
             enemy.DamageEnemy(damage);
             abilities.goExist = false;

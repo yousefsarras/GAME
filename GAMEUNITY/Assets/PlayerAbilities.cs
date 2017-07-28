@@ -10,6 +10,7 @@ public class PlayerAbilities : MonoBehaviour {
     public Vector2 offset = new Vector2(0.4f, 0.1f);
     public float cooldown = 5f;
     PlayerMovement playerMove;
+    PlayerManager playerManager;
     public Transform player;
     GameObject go;
     public bool goExist = false;
@@ -17,6 +18,7 @@ public class PlayerAbilities : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         playerMove = GetComponentInParent<PlayerMovement>();
+        playerManager = GetComponent<PlayerManager>();
 
 	}
 	
@@ -24,6 +26,7 @@ public class PlayerAbilities : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.T) && canCast)
         {
+            playerManager.LoseMana(30);
             //Start cooldown count down
             StartCoroutine(CanCast());
             go = Instantiate(BlinkCast, (Vector2)transform.position + offset * transform.localScale.x, Quaternion.identity);

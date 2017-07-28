@@ -38,21 +38,7 @@ public class Controller2D : RayCastController {
             Debug.DrawRay(rayOrigin, Vector2.up * directionY * rayLength, Color.red);
 
             if (hit)
-            {/*
-                if (hit.collider.tag == "Ladder")
-                {
-                    if (directionY == 1 || directionY == -1 || hit.distance == 0)
-                    {
-                        onVertLadder = true;
-                        Debug.Log("Ladder hit vertical");
-                        continue;
-                    }
-                }
-                else
-                {
-                    onVertLadder = false;
-                    Debug.Log("Ladder NOT hit vertical");
-                }*/
+            {
                 //Move through platfroms up
                 if (hit.collider.tag == "Through")
                 {
@@ -66,7 +52,7 @@ public class Controller2D : RayCastController {
                     {
                         continue;
                     }
-                    if(playerInput.y == -1 && Input.GetKey(KeyCode.Space))
+                    if(playerInput.y == -1 && Input.GetKeyDown(KeyCode.Space))
                     {
                         collisions.fallingThroughPlatform = true;
                         //caled after half a second
@@ -141,22 +127,6 @@ public class Controller2D : RayCastController {
 
             if (hit)
             {
-                /*if (hit.collider.tag == "Ladder")
-                {
-                    if (directionX == 1 || directionX == -1 || hit.distance == 0)
-                    {
-                        onLadder = true;
-                        Debug.Log("Ladder hit horizontal");
-                        continue;
-                    }
-                }
-                else
-                {
-                    onLadder = false;
-                    Debug.Log("Ladder NOT hit horizontal");
-                }*/
-                
-                
                 if (hit.collider.tag == "Through")
                 {
                     continue;
