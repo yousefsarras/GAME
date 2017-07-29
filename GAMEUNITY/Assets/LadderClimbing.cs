@@ -8,16 +8,28 @@ public class LadderClimbing : MonoBehaviour {
 
     public void Start()
     {
-        ladderCenter = this.GetComponent<BoxCollider2D>().offset.x;
+        ladderCenter = this.GetComponent<BoxCollider2D>().transform.localPosition.x;
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Ladder center: " + ladderCenter);
-            collision.GetComponent<PlayerMovement>().climbingLadder = true;
-            //collision.GetComponent<PlayerMovement>().velocity.x = ladderCenter;
-            //float playerX = collision.GetComponent<BoxCollider2D>().offset.x;
+            //Declare the collision to be player
+            PlayerMovement player = collision.GetComponent<PlayerMovement>();
+
+
+            if (player.getOffLadder == true)
+            {
+                OnTriggerExit2D(player.GetComponent<Collider2D>());
+                return;
+            }
+            //Set climbing to be true so climbing action is enabled in playerMovement
+            player.climbingLadder = true;
+
+            //handle centering
+            Vector2 playerPos = new Vector2(ladderCenter, player.transform.position.y);
+                player.transform.position = playerPos;
+            
         }
     }
 
@@ -26,6 +38,8 @@ public class LadderClimbing : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerMovement>().climbingLadder = false;
+            //If trying to getoff
+            //collision.GetComponent<PlayerMovement>().getOffLadder = false;
         }
     }
 }

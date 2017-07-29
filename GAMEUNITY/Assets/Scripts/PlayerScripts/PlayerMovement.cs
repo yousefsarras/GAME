@@ -47,13 +47,14 @@ public class PlayerMovement : MonoBehaviour {
     public float climbVelocity;
     public float gravityStore;
     public bool climbingLadder = false;
+    public bool getOffLadder = false;
+
     //Flip
     Vector2 directionalInput;
 
     void Start () {
         controller = GetComponent<Controller2D>();
         playerInfo = GetComponent<PlayerManager>();
-
         gravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minJumpHeight);
@@ -116,6 +117,8 @@ public class PlayerMovement : MonoBehaviour {
 
         if (attacking)
         {
+            Debug.Log("Player position: " + this.transform.position.x);
+            Debug.Log("Player position: " + this.transform.localPosition.x);
             if (attackTimer > 0)
             {
                 directionalInput.x = 0;
@@ -130,10 +133,6 @@ public class PlayerMovement : MonoBehaviour {
 
         float targetVelocityX = directionalInput.x * moveSpeed;
 
-        if (!climbingLadder)
-        {
-            velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? acceleratonTimeGrounded : accelerationTimeAirBourne);
-        }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime, directionalInput);
 
@@ -156,15 +155,25 @@ public class PlayerMovement : MonoBehaviour {
         if (climbingLadder)
         {
             gravity = 0f;
-            //targetVelocityX = 0f;
             climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
-            //make a horizontal velocity HERE
-            //directionalInput.x = Input.GetAxisRaw("Horizontal") && Input.GetKeyDown(KeyCode.Space);
             velocity = new Vector2(velocity.x * 0, climbVelocity);
+            //while climbing is true if your want to get off
+            //Leaving Ladder , GETTINGOFF = TRUE
+            if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.Space)|| Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.Space))
+            {
+                //once released turn back off
+                //climbing is still true
+                getOffLadder = true;
+            }
+            else
+            {
+                getOffLadder = false;
+            }
         }
         if (!climbingLadder)
         {
             gravity = gravityStore;
+            velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? acceleratonTimeGrounded : accelerationTimeAirBourne);
         }
 
         anim.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
@@ -179,6 +188,16 @@ public class PlayerMovement : MonoBehaviour {
             facingRight = !facingRight;
             transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
             status.transform.localScale = new Vector3(status.transform.localScale.x * -1, status.transform.localScale.y, status.transform.localScale.z);
+        }
+    }
+
+    //Handle any collision the player has
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //switching back off
+        if(collision.tag != "ladder")
+        {
+            getOffLadder = false;
         }
     }
 }
