@@ -36,6 +36,7 @@ public class PlayerAbilities : MonoBehaviour {
                 go.transform.Rotate(0, 180, 0);
             }
             go.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x * transform.localScale.x, velocity.y);
+            Debug.Log(go.GetComponent<Rigidbody2D>().velocity);
 
         }
 
