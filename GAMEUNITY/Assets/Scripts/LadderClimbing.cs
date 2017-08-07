@@ -29,7 +29,6 @@ public class LadderClimbing : MonoBehaviour {
             //handle centering
             Vector2 playerPos = new Vector2(ladderCenter, player.transform.position.y);
             player.transform.position = playerPos;
-            Debug.Log(playerPos + " " + player.transform.position);
         }
     }
 

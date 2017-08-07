@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretBullet : MonoBehaviour {
+public class EnemyBullet : MonoBehaviour {
 
-    public int damage = 1;
+    public float lifeTime = 1.5f;
+    public int damage = 5;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -12,7 +13,12 @@ public class TurretBullet : MonoBehaviour {
             collision.GetComponent<PlayerManager>().DamagePlayer(damage);
             Destroy(gameObject);
         }
+        if (collision.CompareTag("Turret"))
+        {
+            collision.GetComponentInParent<TurretManager>().DamageTurret(damage);
+            Destroy(gameObject);
+        }
 
-        Destroy(gameObject, 1.5f);
+        Destroy(gameObject, lifeTime);
     }
 }

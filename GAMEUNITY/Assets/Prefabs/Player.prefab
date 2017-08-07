@@ -257,7 +257,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!50 &50707324270100836
@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  player: {fileID: 0}
 --- !u!114 &114152980919735120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -514,6 +515,7 @@ MonoBehaviour:
     damage: 0
     movementSpd: 0
     xp: 0
+    gold: 0
   statusIndicator: {fileID: 114451209584777626}
   UIstatusIndicator: {fileID: 114242930569497590}
 --- !u!114 &114312910801188366
@@ -554,9 +556,16 @@ MonoBehaviour:
   timeToJumpApex: 0.4
   grounded: 0
   moveSpeed: 8
+  gravity: 0
+  velocity: {x: 0, y: 0, z: 0}
   attackTrigger: {fileID: 61431181872652088}
   playerInfo: {fileID: 114305430326855912}
   status: {fileID: 114451209584777626}
+  climbSpeed: 6
+  climbVelocity: 0
+  gravityStore: 0
+  climbingLadder: 0
+  getOffLadder: 0
 --- !u!114 &114405248779862338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -748,14 +757,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846460859590178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15eac044d9b95341ac9cef99741eb2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 03b7411e8fa89df4aa3a7a2d270bb941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BlinkCast: {fileID: 1011033744396546, guid: 9c147d294bed23c4f8690a508ae443d6, type: 2}
-  velocity: {x: 13, y: 0}
+  velocity: {x: 6, y: 0}
   offset: {x: 0.4, y: 0.1}
   cooldown: 1
   player: {fileID: 4305819626436692}
+  goExist: 0
 --- !u!114 &114991224258129490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -806,9 +816,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2107693841
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -184286789
+  m_SortingLayer: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: b9c9214919e417b48a76d1a2f63ab936, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

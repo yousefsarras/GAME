@@ -18,9 +18,6 @@ public class Enemy : MonoBehaviour {
             set { _currentHealth = Mathf.Clamp(value, 0, maxHealth); }
         }
 
-        public int maxMana = 100;
-        public int manaRegen = 5;
-
         public int xpWorth = 10;
         public int goldWorth = 10;
         public void Init()

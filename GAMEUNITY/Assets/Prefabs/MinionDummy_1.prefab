@@ -125,11 +125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xpRangeCollider: {fileID: 58536962150695886}
-  xpGain: {fileID: 114849729236416088}
+  xpRangeGain: {fileID: 0}
   enemyStats:
     maxHealth: 100
-    maxMana: 100
-    manaRegen: 5
     xpWorth: 10
     goldWorth: 10
 --- !u!114 &114849729236416088
@@ -140,7 +138,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1741364169227436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b62187caccc1be84585732fc81c82f06, type: 3}
+  m_Script: {fileID: 11500000, guid: efdc77d273395ba4f88c88082fb5e3d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xpReaper: 0

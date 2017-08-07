@@ -23,9 +23,25 @@ GameObject:
   - component: {fileID: 95422048602148960}
   - component: {fileID: 114245100948715984}
   - component: {fileID: 114713818362386272}
+  - component: {fileID: 50825124307440410}
   m_Layer: 0
   m_Name: Turret 1
-  m_TagString: Untagged
+  m_TagString: Turret
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1092530577759918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4994377093535052}
+  m_Layer: 0
+  m_Name: MinionTargetable
+  m_TagString: MinionTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +73,7 @@ GameObject:
   - component: {fileID: 4800570160645822}
   - component: {fileID: 61305829724991294}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: TurretCollider
   m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,6 +209,7 @@ Transform:
   - {fileID: 4868570845968568}
   - {fileID: 4979121283496214}
   - {fileID: 4800570160645822}
+  - {fileID: 4994377093535052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -276,6 +293,39 @@ Transform:
   m_Father: {fileID: 4217241395413876}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4994377093535052
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092530577759918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4217241395413876}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50825124307440410
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070036730454694}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60255109650477332
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -341,7 +391,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0008845329, y: -0.06985855}
@@ -488,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats:
-    maxHealth: 200
+    maxHealth: 100
     startPercentHealth: 1
   statusIndicator: {fileID: 114943819723380040}
 --- !u!114 &114811831736701588

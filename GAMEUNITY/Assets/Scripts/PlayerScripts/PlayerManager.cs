@@ -144,7 +144,7 @@ public class PlayerManager : MonoBehaviour {
         Debug.Log("level: " + playerStats.level);
         statusIndicator.SetLevel(playerStats.level);
         Debug.Log("level: " + playerStats.level);
-        //playerStats.maxHealth = (10 * currentLevel) +10;
+        //playerStats.maxHealth = (10 * currentLevel) + 10;
         //playerStats.damage  = playerStats.damage + currentLevel * 0.25;
         //playerStats.movementSpd = playerStats.movementSpd + 0.1f;
         //moveController.moveSpeed = playerStats.movementSpd;

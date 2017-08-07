@@ -117,8 +117,6 @@ public class PlayerMovement : MonoBehaviour {
 
         if (attacking)
         {
-            Debug.Log("Player position: " + this.transform.position.x);
-            Debug.Log("Player position: " + this.transform.localPosition.x);
             if (attackTimer > 0)
             {
                 directionalInput.x = 0;

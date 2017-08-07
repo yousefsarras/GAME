@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4112478721679238}
   - component: {fileID: 114612151635098548}
+  - component: {fileID: 114424248228405424}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: GM
@@ -40,6 +41,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114424248228405424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175802489206662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72206c4a43b490249bbbf2542b412b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - name: WaveSpawn
+    enemy: {fileID: 4707435088763180, guid: b3239818929fd9847b8d500e19a5e303, type: 2}
+    count: 3
+    rate: 1.5
+  spawnPoints:
+  - {fileID: 0}
+  timeBetweenWaves: 15
 --- !u!114 &114612151635098548
 MonoBehaviour:
   m_ObjectHideFlags: 1
