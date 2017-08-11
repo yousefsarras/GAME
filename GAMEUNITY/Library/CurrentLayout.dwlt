@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 495}
   m_MaxSize: {x: 14004, y: 14045}
   vertical: 0
-  controlID: 1336
+  controlID: 3319
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 495}
   m_MaxSize: {x: 10002, y: 14045}
   vertical: 1
-  controlID: 1337
+  controlID: 3320
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 1338
+  controlID: 3321
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,9 +364,9 @@ MonoBehaviour:
     width: 319
     height: 394
   m_TreeViewState:
-    scrollPos: {x: 0, y: 103}
-    m_SelectedIDs: b698feff
-    m_LastClickedID: -91978
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: e6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -417,14 +417,14 @@ MonoBehaviour:
     width: 745
     height: 394
   m_SceneLighting: 1
-  lastFramingTime: 53820.80779155815
+  lastFramingTime: 1169.3852269533336
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 83.69098, y: 14.026344, z: 0}
+    m_Target: {x: 82.392105, y: 12.998433, z: 0}
     speed: 2
-    m_Value: {x: 83.69098, y: 14.026344, z: 0}
+    m_Value: {x: 82.392105, y: 12.998433, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -451,9 +451,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.231079
+    m_Target: 35.644615
     speed: 2
-    m_Value: 10.231079
+    m_Value: 35.644615
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -501,19 +501,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\yousef\Desktop\GAME\GAME\GAMEUNITY
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 30}
-    m_SelectedIDs: e6240000
-    m_LastClickedID: 9446
-    m_ExpandedIDs: 00000000e6240000d0250000a226000080270000fe2b000000ca9a3bffffff7f
+    m_SelectedIDs: 96270000
+    m_LastClickedID: 10134
+    m_ExpandedIDs: 00000000e6240000d0250000a226000084270000502c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e6240000d0250000a226000080270000fe2b000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000e6240000d0250000a226000084270000502c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300001e2e0000262e00002e2700006a2a000024270000a6250000b025000052260000
+    m_ExpandedInstanceIDs: c62300001e2e0000262e00002e2700006a2a000024270000a6250000b0250000522600008c250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
