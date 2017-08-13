@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AttackTrigger : MonoBehaviour {
 
-    public int damage = 20;
     public PlayerManager player;
 
     public void Start()
@@ -18,18 +17,18 @@ public class AttackTrigger : MonoBehaviour {
         {
             Enemy enemy = collision.GetComponent<Enemy>();
             //see if incoming dmg will kill enemy
-            if(enemy.enemyStats.currentHealth - damage <= 0)
+            if(enemy.enemyStats.currentHealth - player.playerStats.attackDamage <= 0)
             {
                 player.addGold(enemy.enemyStats.goldWorth);
                 //Debug.Log("gold: " + player.playerStats.gold);
             }
-            enemy.DamageEnemy(damage);
+            enemy.DamageEnemy(player.playerStats.attackDamage);
         }
 
         if (collision.CompareTag("Turret"))
         {
             TurretManager turret = collision.GetComponentInParent<TurretManager>();//find child component
-            turret.DamageTurret(damage);
+            turret.DamageTurret(player.playerStats.attackDamage);
         }
     }
 }
