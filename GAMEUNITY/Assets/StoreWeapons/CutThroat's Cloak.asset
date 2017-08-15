@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: CutThroat's Cloak
   cost: 15
-  description: 
+  description: An Assassin's cloak
   aD: 10
   health: 0
   mana: 0

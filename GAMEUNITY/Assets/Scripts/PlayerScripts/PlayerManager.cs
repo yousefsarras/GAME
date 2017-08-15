@@ -7,10 +7,13 @@ public class PlayerManager : MonoBehaviour {
     public float fallBoundary = -20;
     public bool noRegenMana = false;
     public bool dead = false;
+	[HideInInspector]
     public PlayerMovement moveController;
     public CameraFollow cam;
+	public GameMaster gm;
 
     public WeaponObject[] itemBag;
+	public int firstOpenBagSpace = 0;
 
     [System.Serializable]    //Serializable class
     public class PlayerStats
@@ -69,6 +72,7 @@ public class PlayerManager : MonoBehaviour {
     {
         playerStats.Init();
         moveController = GetComponent<PlayerMovement>();
+		itemBag = new WeaponObject[4];
         if(statusIndicator == null || UIstatusIndicator == null)
         {
             Debug.LogError("No status indicator referenced on Player");
@@ -82,6 +86,7 @@ public class PlayerManager : MonoBehaviour {
             UIstatusIndicator.SetHealth(playerStats.currentHealth, playerStats.maxHealth);
             UIstatusIndicator.SetMana(playerStats.currentMana, playerStats.maxMana);
         }
+			
     }
 
     public void DamagePlayer(int damage)
@@ -90,8 +95,8 @@ public class PlayerManager : MonoBehaviour {
         if(playerStats.currentHealth <= 0)
         {
             dead = true;
-            cam.enabled = false;
-            GameMaster.KillPlayer(this);
+			gm.KillPlayer(this);
+			cam.enabled = false;
         }
 
         statusIndicator.SetHealth(playerStats.currentHealth, playerStats.maxHealth);
@@ -158,5 +163,14 @@ public class PlayerManager : MonoBehaviour {
     {
         playerStats.gold += goldAmount;
     }
+
+	public void findOpenSpace(){
+		for (int i = 0; i < itemBag.Length; i++) {
+			if (itemBag [i] == null) {
+				firstOpenBagSpace = i;
+				break;
+			}
+		}
+	}
 
 }

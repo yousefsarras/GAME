@@ -30,8 +30,9 @@ public class GameMaster : MonoBehaviour {
 
     //Player argument access player class
     //static so no reference to gamemaster everytime we kill a player and simply pass reference here
-    public static void KillPlayer(PlayerManager player)
+    public void KillPlayer(PlayerManager player)
     {
+		Debug.Log ("Trying to kill the player");
         player.transform.position = new Vector3(-63, -13, 0);
         player.GetComponent<PlayerMovement>().enabled = false;
         gm.StartCoroutine(gm.RespawnPlayer(player));

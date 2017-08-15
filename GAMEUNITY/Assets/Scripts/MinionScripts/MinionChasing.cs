@@ -51,7 +51,6 @@ public class MinionChasing : MonoBehaviour {
 
     private void Update()
     {
-        Debug.Log("currentTarget = " + minion.currentTarget);
         if (minion.currentTarget == null)
         {
             targetGone = true;
