@@ -9,7 +9,7 @@ public class WeaponObject : ScriptableObject {
     public int cost = 0;
     public string description;
 
-    public float aD = 0;
+    public int aD = 0;
     public int health = 0;
     public int mana = 0;
     public int moveSpeed = 0;

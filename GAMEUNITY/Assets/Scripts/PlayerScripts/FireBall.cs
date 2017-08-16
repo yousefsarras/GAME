@@ -6,7 +6,6 @@ public class FireBall : MonoBehaviour {
 
     public PlayerManager player;
     public PlayerAbilities abilities;
-    public int damage = 20;
 
     public void Start()
     {
@@ -18,14 +17,14 @@ public class FireBall : MonoBehaviour {
         if (collision.CompareTag("Enemy"))
         {
             Enemy enemy = collision.GetComponent<Enemy>();
-            if(enemy.enemyStats.currentHealth - damage <= 0)
+            if(enemy.enemyStats.currentHealth - player.playerStats.attackDamage <= 0)
             {
                 player.addGold(enemy.enemyStats.goldWorth);
                 //Will run first to fix range issue
                 player.addXp(enemy.enemyStats.xpWorth);
                 GameMaster.KillEnemy(enemy);
             }
-            enemy.DamageEnemy(damage);
+            enemy.DamageEnemy(player.playerStats.attackDamage);
             abilities.goExist = false;
             Destroy(gameObject);
         }

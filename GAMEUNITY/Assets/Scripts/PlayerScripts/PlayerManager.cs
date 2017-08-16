@@ -13,7 +13,6 @@ public class PlayerManager : MonoBehaviour {
 	public GameMaster gm;
 
     public WeaponObject[] itemBag;
-	public int firstOpenBagSpace = 0;
 
     [System.Serializable]    //Serializable class
     public class PlayerStats
@@ -164,13 +163,20 @@ public class PlayerManager : MonoBehaviour {
         playerStats.gold += goldAmount;
     }
 
-	public void findOpenSpace(){
+	public int firstOpenSpace(){
 		for (int i = 0; i < itemBag.Length; i++) {
 			if (itemBag [i] == null) {
-				firstOpenBagSpace = i;
-				break;
-			}
+                return i;
+            }
 		}
+        return -1;
 	}
 
+    public void addStats(int damage, int defense, int health, int maxMana, int moveSpeed)
+    {
+        playerStats.attackDamage = playerStats.attackDamage + damage;
+        playerStats.maxHealth = playerStats.maxHealth + health;
+        playerStats.maxMana = playerStats.maxMana + maxMana;
+        playerStats.movementSpd = playerStats.movementSpd + moveSpeed;
+    }
 }

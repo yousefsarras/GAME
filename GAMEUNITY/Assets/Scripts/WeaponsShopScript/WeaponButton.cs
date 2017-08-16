@@ -9,7 +9,7 @@ public class WeaponButton : MonoBehaviour {
 	public ShopItems shopStuff;
 	public int itemNumber;
 
-	public Text name;
+    public Text name;
 	public Text cost;
 	public Text description;
 
@@ -26,8 +26,10 @@ public class WeaponButton : MonoBehaviour {
 		
 	public void onClick(){
 		if (player.playerStats.gold >= shopStuff.shopItems [itemNumber].cost) {
+            Debug.Log("Entered the equipment");
 			player.playerStats.gold -= shopStuff.shopItems [itemNumber].cost;
-			//Place item in player itembag here
+			player.itemBag[player.firstOpenSpace()] = shopStuff.shopItems[itemNumber];
+            player.addStats(shopStuff.shopItems[itemNumber].aD, shopStuff.shopItems[itemNumber].defense, shopStuff.shopItems[itemNumber].health, shopStuff.shopItems[itemNumber].mana, shopStuff.shopItems[itemNumber].moveSpeed);
 		} else {
 			Debug.Log ("Not enough gold");
 		}
