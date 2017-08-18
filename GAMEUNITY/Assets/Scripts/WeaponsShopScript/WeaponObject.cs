@@ -14,6 +14,5 @@ public class WeaponObject : ScriptableObject {
     public int mana = 0;
     public int moveSpeed = 0;
     public int defense = 0;
-
-
+    public Sprite icon;
 }

@@ -8,6 +8,7 @@ public class ShopController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collision){
 		if (collision.gameObject.CompareTag ("Player")) {
+            Debug.Log("Entering collision");
 			OpenShop ();
 		}
 	}

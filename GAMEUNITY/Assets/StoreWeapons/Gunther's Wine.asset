@@ -19,3 +19,4 @@ MonoBehaviour:
   mana: 0
   moveSpeed: 0
   defense: 0
+  icon: {fileID: 21300000, guid: 7b9770f5b18dff640ae0701155879f54, type: 3}

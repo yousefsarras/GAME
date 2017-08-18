@@ -273,6 +273,7 @@ MonoBehaviour:
   player: {fileID: 0}
   shopStuff: {fileID: 114327690048103266}
   itemNumber: 0
+  itemBagUI: {fileID: 0}
   name: {fileID: 114355191535613416}
   cost: {fileID: 114392361276265782}
   description: {fileID: 114200757001424230}
@@ -823,6 +824,7 @@ MonoBehaviour:
   player: {fileID: 0}
   shopStuff: {fileID: 114327690048103266}
   itemNumber: 1
+  itemBagUI: {fileID: 0}
   name: {fileID: 114162194246354048}
   cost: {fileID: 114004647117411700}
   description: {fileID: 114489001638750506}

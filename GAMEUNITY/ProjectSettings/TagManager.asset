@@ -13,6 +13,7 @@ TagManager:
   - Minion
   - MinionTarget
   - BasePoint
+  - ItemIcon
   layers:
   - Default
   - TransparentFX

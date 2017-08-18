@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarRect: {fileID: 224563310447006826}
   manaBarRect: {fileID: 224306154007215268}
+  levelText: {fileID: 0}
 --- !u!114 &114887255701402882
 MonoBehaviour:
   m_ObjectHideFlags: 1
