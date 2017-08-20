@@ -512,7 +512,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  firstOpenBagSpace: 0
   playerStats:
     maxHealth: 100
     maxMana: 100
