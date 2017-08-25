@@ -18,6 +18,7 @@ public class BagWeaponIcon : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-		if(itemSelected == true &&)
+
+        // if(itemSelected == true &&)
 	}
 }
