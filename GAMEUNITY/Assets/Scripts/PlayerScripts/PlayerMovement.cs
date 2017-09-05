@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour {
     float acceleratonTimeGrounded = 0.1f;
 
     //reference to controller2d class for movement
-    Controller2D controller;
+    public Controller2D controller;
 
     //Handle attack
     private bool attacking = false;
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour {
     private void Update()
     {
         //Status indicator flip
-
+        Debug.Log(climbingLadder);
         anim.SetBool("Grounded", grounded);
         //Check if there is ground
         if(Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
@@ -154,6 +154,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             gravity = 0f;
             climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
+
             velocity = new Vector2(velocity.x * 0, climbVelocity);
             //while climbing is true if your want to get off
             //Leaving Ladder , GETTINGOFF = TRUE
@@ -170,6 +171,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (!climbingLadder)
         {
+            anim.SetBool("Climbing", climbingLadder);
             gravity = gravityStore;
             velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? acceleratonTimeGrounded : accelerationTimeAirBourne);
         }

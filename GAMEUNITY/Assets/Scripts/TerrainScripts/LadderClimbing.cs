@@ -25,7 +25,15 @@ public class LadderClimbing : MonoBehaviour {
             }
             //Set climbing to be true so climbing action is enabled in playerMovement
             player.climbingLadder = true;
-
+            if (player.velocity.y == 0)
+            {
+                player.anim.SetBool("ClimbingIdle", true);
+            }
+            else
+            {
+                player.anim.SetBool("ClimbingIdle", false);
+                player.anim.SetBool("Climbing", player.climbingLadder);
+            }
             //handle centering
             Vector2 playerPos = new Vector2(ladderCenter, player.transform.position.y);
             player.transform.position = playerPos;
@@ -36,7 +44,9 @@ public class LadderClimbing : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerMovement>().climbingLadder = false;
+            PlayerMovement player = collision.GetComponent<PlayerMovement>();
+            player.climbingLadder = false;
+            player.anim.SetBool("Climbing", player.climbingLadder);
             //If trying to getoff
             //collision.GetComponent<PlayerMovement>().getOffLadder = false;
         }
