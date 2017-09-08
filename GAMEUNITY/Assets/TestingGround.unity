@@ -506,6 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e376d4a3c7fe9144b3bc0da3ab48219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSelected: 0
 --- !u!1 &51919219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,6 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4895f8ad89546974fb51814c13e76260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sellSwitch: 0
 --- !u!114 &196678252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3258,6 +3260,11 @@ Prefab:
       propertyPath: gm
       value: 
       objectReference: {fileID: 572167715}
+    - target: {fileID: 114924161273035326, guid: 59cc40defbcbb0040908f4b5a14dc177,
+        type: 2}
+      propertyPath: velocity.x
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59cc40defbcbb0040908f4b5a14dc177, type: 2}
   m_IsPrefabParent: 0
@@ -6008,6 +6015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e376d4a3c7fe9144b3bc0da3ab48219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSelected: 0
 --- !u!1 &1387378633
 GameObject:
   m_ObjectHideFlags: 0
@@ -8056,6 +8064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e376d4a3c7fe9144b3bc0da3ab48219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSelected: 0
 --- !u!1 &1883290323
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,6 +8281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e376d4a3c7fe9144b3bc0da3ab48219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSelected: 0
 --- !u!1 &1944453595
 GameObject:
   m_ObjectHideFlags: 0

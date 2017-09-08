@@ -563,6 +563,7 @@ MonoBehaviour:
   moveSpeed: 8
   gravity: 0
   velocity: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   attackTrigger: {fileID: 61431181872652088}
   playerInfo: {fileID: 114305430326855912}
   status: {fileID: 114451209584777626}
@@ -766,7 +767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BlinkCast: {fileID: 1011033744396546, guid: 9c147d294bed23c4f8690a508ae443d6, type: 2}
-  velocity: {x: 6, y: 0}
+  velocity: {x: 10, y: 0}
   offset: {x: 0.4, y: 0.1}
   cooldown: 1
   player: {fileID: 4305819626436692}
